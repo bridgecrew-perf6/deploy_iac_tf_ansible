@@ -94,7 +94,7 @@ resource "aws_route_table" "internet_route" {
     lifecycle {
         ignore_changes = all
     }
-    tags {
+    tags = {
         Name = "Master-Region-RT"
     }
 }
@@ -121,7 +121,7 @@ resource "aws_route_table" "internet_route_oregon" {
     lifecycle {
         ignore_changes = all
     }
-    tags {
+    tags = {
         Name = "Worker-Region-RT"
     }
 }
